@@ -16,19 +16,19 @@
     <div><p class="search_here"> search</p></div>
     <div class="error">invalid city name</div>
     <div class="weather">
-        <img  src= "C:\weather\images\rainy.png" class="weather-icon">
+        <img  src= "images\rainy.png" class="weather-icon">
         <h1 class="temp">19°c</h1>
         <h2 class="city">New York</h2>
         <div class="details">
             <div class="col">
-                <img src="C:\weather\images\humidity.png" class="humidity-icon" >
+                <img src="images\humidity.png" class="humidity-icon" >
                 <div>
                     <p class="humidity">66%</p>
                     <p>Humidity</p>
                 </div>
             </div>
             <div class="col">
-                <img src="C:\weather\images\wind.png" class="wind" >
+                <img src="images\wind.png" class="wind" >
                 <div>
                     <p class="Wind">4.12km/h</p>
                     <p>Wind</p>
@@ -78,20 +78,20 @@
         document.querySelector(".Wind").innerHTML=data.wind.speed+"km/h";
 
         if(data.weather[0].main=="Clouds"){
-            Weathericon.src="C:/weather/images/clouds.png";
+            Weathericon.src="images/clouds.png";
         }
         else if(data.weather[0].main=="Clear"){
-            Weathericon.src="C:/weather/images/sunny.png";
+            Weathericon.src="images/sunny.png";
         }
         else if(data.weather[0].main=="Rain"){
-            Weathericon.src="C:/weather/images/rainy.png";
+            Weathericon.src="images/rainy.png";
         }
         else if(data.weather[0].main=="Drizzle"){
-            Weathericon.src="C:/weather/images/rainy.png";
+            Weathericon.src="images/rainy.png";
         }
         
         else if(data.weather[0].main=="Mist"){
-            Weathericon.src="C:/weather/images/normal.png";
+            Weathericon.src="images/normal.png";
         }
         document.querySelector(".weather").style.display="block";
         document.querySelector(".error").style.display="none";
